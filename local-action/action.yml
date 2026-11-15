@@ -1,0 +1,7 @@
+name: local-action of lib
+description: local-action of lib
+runs:
+  using: composite
+  steps:
+    - run: echo "local-action of lib"
+      shell: bash

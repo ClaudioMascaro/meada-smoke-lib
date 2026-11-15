@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "meada-smoke-cli"
+version = "0.1.0"
+description = "Console script of the Meada CI smoke corpus"
+requires-python = ">=3.9"
+
+[project.scripts]
+smoke-cli = "smoke_cli.main:run"
+
+[tool.setuptools.packages.find]
+where = ["src"]

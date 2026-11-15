@@ -1,0 +1,10 @@
+# A reusable pipeline of a second repository: it calls the shared one.
+name: check
+on:
+  workflow_call:
+jobs:
+  shared-build:
+    # case: chain-lib-to-shared
+    uses: ClaudioMascaro/meada-smoke-shared/.github/workflows/build.yml@main
+    with:
+      target: from-lib
