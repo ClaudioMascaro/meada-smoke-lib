@@ -1,0 +1,5 @@
+[[decision]]
+kind = "dynamic-url"
+call = "github.com/claudiomascaro/meada-smoke-app::orders/shadow/client.go::Client.CreateOrder::http.NewRequest#0"
+target = "github.com/claudiomascaro/meada-smoke-lib::http::POST::/orders"
+by = "human"
