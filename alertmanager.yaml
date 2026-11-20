@@ -1,0 +1,11 @@
+route:
+  receiver: default
+  routes:
+    - receiver: orders
+      match: {team: orders}
+    - receiver: inventory
+      match: {team: inventory}
+receivers:
+  - name: default
+  - name: orders
+  - name: inventory
