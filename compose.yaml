@@ -1,0 +1,5 @@
+services:
+  orders:
+    image: localhost:5000/smoke/app:1
+  retired:
+    image: localhost:5000/smoke/retired:1
